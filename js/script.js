@@ -1,9 +1,9 @@
 function hamburg() {
-    document.querySelector('.dropdown').style.display = 'flex';
+    document.querySelector('.dropdown').classList.add('active');
   }
   
   function cancel() {
-    document.querySelector('.dropdown').style.display = 'none';
+    document.querySelector('.dropdown').classList.remove('active');
   }
   
 // Typewriter Effect

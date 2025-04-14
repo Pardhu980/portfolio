@@ -184,4 +184,40 @@ body {
       font-size: 1rem;
     }
   }
+  .dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffe7;
+    z-index: 999;
+    width: 200px;
+  }
+  
+  .dropdown.active {
+    display: flex;
+  }
+  
+  .dropdown .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .dropdown .links a {
+    color: #00ffe7;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .cancel {
+    font-size: 1.5rem;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+  }
   
