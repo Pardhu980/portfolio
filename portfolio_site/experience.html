@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experience | Pardhu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      background-color: #0e0e10;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 1rem 2rem;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #00ffe7;
+    }
+
+    .logo span {
+      color: white;
+    }
+
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #00ffe7;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover {
+      color: white;
+    }
+
+    .main-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .experience-title {
+      font-size: 2.8rem;
+      color: #00ffe7;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+    }
+
+    .experience-card {
+      background: #1a1a1d;
+      border: 1px solid #00ffe7;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 0 15px #00ffe78a;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .experience-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px #00ffe7;
+    }
+
+    .experience-card h2 {
+      color: #00ffe7;
+      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+    }
+
+    .experience-card p {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #cccccc;
+    }
+
+    @media (max-width: 768px) {
+      .experience-title {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .experience-title {
+        font-size: 1.8rem;
+      }
+
+      .experience-card h2 {
+        font-size: 1.1rem;
+      }
+
+      .experience-card p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Pardha <span>Shankar</span></div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
+        
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="main-container">
+      <h1 class="experience-title" data-aos="fade-up">Experience & Activities</h1>
+      <div class="experience-grid">
+        <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+          <h2>☁️ Cloud Intern @ WorinWell</h2>
+          <p>Built secure user login with AWS Cognito in a Laravel app. Hosted on EC2 with DNS & SSL setup.</p>
+        </div>
+        <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+          <h2>🎯 Inventum Fest Coordinator</h2>
+          <p>Organized technical & cultural events and managed team responsibilities across campus.</p>
+        </div>
+        <div class="experience-card" data-aos="fade-up" data-aos-delay="300">
+          <h2>📣 SAC Student Coordinator</h2>
+          <p>Collaborated on various student-driven initiatives and participated in planning college-wide activities.</p>
+        </div>
+        <div class="experience-card" data-aos="fade-up" data-aos-delay="400">
+          <h2>🧠 GeeksforGeeks AIML Workshop</h2>
+          <p>Hands-on experience with machine learning algorithms and real-time AI applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ once: true });</script>
+</body>
+</html>
